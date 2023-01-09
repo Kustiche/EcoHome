@@ -5,34 +5,66 @@
   background-repeat: no-repeat
   background-size: cover
   background-position: center
+  @media ( max-width: 992px )
+    padding-top: 200px
+    padding-bottom: 170px
+  @media ( max-width: 768px )
+    padding-top: 150px
+    padding-bottom: 230px
 
   &__container
+    display: flex
+    justify-content: flex-start
     position: relative
     padding-left: 140px
+    @media ( max-width: 992px )
+      padding-left: 60px
+    @media ( max-width: 576px )
+      justify-content: center
+      padding-left: 0
 
   &__wrap
     display: flex
     flex-direction: column
     align-items: flex-start
     max-width: 470px
+    @media ( max-width: 576px )
+      align-items: center
 
   &__descr
     font-family: "Golos-Text_DemiBold", sans-serif
     font-weight: 600
     font-size: 14px
+    text-align: center
 
   &__title
     margin: 0
-    margin-bottom: 10px
     font-family: "Golos-Text_Bold", sans-serif
     font-weight: 700
     font-size: 72px
     line-height: 113%
+    &:last-child
+      margin-bottom: 10px
+    @media ( max-width: 992px )
+      font-size: 64px
+      text-align: center
+    @media ( max-width: 576px )
+      font-size: 42px
 
   &__quote
     margin-bottom: 45px
     font-size: 20px
     line-height: 113%
+    text-align: center
+    @media ( max-width: 576px )
+      margin-bottom: 25px
+
+  &__link
+    @media ( max-width: 576px )
+      padding: 13px 38px 13px 68px
+      &::after
+        top: 15px
+        left: 46px
 
   &__scroll
     width: 230px
@@ -44,6 +76,16 @@
     transition: transform .4s
     &:hover
       transform: translate(0, 100%) scale(95%)
+    @media ( max-width: 992px )
+      width: 180px
+      height: 180px
+      right: 56px
+    @media ( max-width: 768px )
+      right: 50%
+      bottom: -30px
+      transform: translate(50%, 100%)
+      &:hover
+        transform: translate(50%, 100%) scale(95%)
 
   &__img
     width: 100%
