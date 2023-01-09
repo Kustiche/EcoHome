@@ -1,0 +1,29 @@
+.title
+  margin: 0
+
+.text
+  margin: 0
+
+.link
+  padding: 23px 48px 23px 78px
+  font-family: "Golos-Text_Medium", sans-serif
+  font-weight: 500
+  font-size: 14px
+  line-height: 113%
+  background-color: $closed-shutter
+  border: 2px solid $closed-shutter
+  box-shadow: -6px 62px 25px rgba(0, 0, 0, 0.01), -3px 35px 21px rgba(0, 0, 0, 0.05), -1px 16px 16px rgba(0, 0, 0, 0.09), 0px 4px 9px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1)
+  border-radius: 55px
+  position: relative
+  transition: all .4s
+  &::after
+    position: absolute
+    content: ""
+    top: 25px
+    left: 55px
+    clip-path: polygon(0 0, 0 100%, 100% 50%)
+    background-color: $white
+    width: 7px
+    height: 12px
+  &:hover
+    background-color: inherit
