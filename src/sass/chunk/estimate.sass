@@ -1,17 +1,28 @@
 .estimate
   padding-top: 185px
   padding-bottom: 195px
+  @media screen and ( max-width: 992px )
+    padding-top: 150px
+    padding-bottom: 160px
+  @media screen and ( max-width: 576px )
+    padding-top: 70px
+    padding-bottom: 80px
 
   &__wrap
     display: flex
     align-items: center
     justify-content: center
+    @media screen and ( max-width: 768px )
+      flex-direction: column
 
   &__content
     display: flex
     flex-direction: column
     align-items: flex-start
     max-width: 320px
+    @media screen and ( max-width: 768px )
+      max-width: 100%
+      margin-bottom: 20px
 
   &__title
     margin-bottom: 10px
