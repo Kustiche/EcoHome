@@ -830,6 +830,14 @@ body.touch .menu__link {
     max-width: 530px;
   }
 }
+.tabs__content-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
 @media screen and (max-width: 1220px) {
   .tabs__content-item {
     -webkit-box-orient: vertical;
@@ -842,14 +850,6 @@ body.touch .menu__link {
   }
 }
 
-.tab1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
 @media screen and (max-width: 1220px) {
   .tab1__title {
     margin-bottom: 20px;
@@ -897,9 +897,6 @@ body.touch .menu__link {
 }
 
 .tab2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -940,9 +937,6 @@ body.touch .menu__link {
 }
 
 .tab3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1232,6 +1226,18 @@ body.touch .menu__link {
   padding-top: 185px;
   padding-bottom: 195px;
 }
+@media screen and (max-width: 992px) {
+  .estimate {
+    padding-top: 150px;
+    padding-bottom: 160px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .estimate {
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+}
 .estimate__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1242,6 +1248,14 @@ body.touch .menu__link {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .estimate__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .estimate__content {
   display: -webkit-box;
@@ -1255,6 +1269,12 @@ body.touch .menu__link {
       -ms-flex-align: start;
           align-items: flex-start;
   max-width: 320px;
+}
+@media screen and (max-width: 768px) {
+  .estimate__content {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
 }
 .estimate__title {
   margin-bottom: 10px;
